@@ -1,6 +1,8 @@
 import gradio as gr
+import spaces
 
 
+@spaces.GPU
 def greet(name):
     return f"안녕하세요, {name}님! CI/CD 배포 성공입니다."
 
